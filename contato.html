@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/stylecontato.css">
+    <title>Exemplo-5</title>
+</head>
+<body>
+    <!-- Rodapé fixo no topo -->
+    <footer class="topo">
+        
+        <img src="./assets/logogs.PNG" alt="logo" class="logo-topo">
+        <h1>Flork's</h1>
+        <button class="botao-voltar" onclick="voltarPagina()">Voltar à página principal</button>
+    </footer>
+
+    <div class="main">
+        <header>
+           
+            <h1>Crie sua Conta</h1>
+        </header>
+
+        <form class="form" id="form">
+            <div class="controle">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome"/>
+                <i class="sucesso"><img src="./src/assets/sucesso.svg"/></i>
+                <i class="error"><img src="./src/assets/error.svg"/></i>
+                <small>Error</small>
+            </div>
+
+            <div class="controle">
+                <label for="email">Email</label>
+                <input type="email" id="email"/>
+                <i class="sucesso"><img src="./src/assets/sucesso.svg"/></i>
+                <i class="error"><img src="./src/assets/error.svg"/></i>
+                <small>Error</small>
+            </div>
+
+            <div class="controle">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha"/>
+                <i class="sucesso"><img src="./src/assets/sucesso.svg"/></i>
+                <i class="error"><img src="./src/assets/error.svg"/></i>
+                <small>Error</small>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <script src="./src/js/scriptcontato.js"></script>
+    
+</body>
+</html>

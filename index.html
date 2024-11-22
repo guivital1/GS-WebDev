@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Solução</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <img src="./assets/logogs.PNG" alt="logo" class="logo">
+        <h1>Flork's</h1>
+       
+        <nav>
+            <ul>
+               
+                 <li><a href="#secao1" class="nav-item">Problema</a></li>
+                <li><a href="#secao2" class="nav-item">Tecnologia</a></li>
+                <li><a href="#secao3" class="nav-item">Objetivos</a></li>
+                <li><a href="#secao4" class="nav-item">Público</a></li>
+                <li><a href="#secao5" class="nav-item">Benefícios</a></li>
+                <li><a href="#secao6" class="nav-item  ">Uso Diário</a></li>
+                <button id="loginButton" class="btnLogin-popup" >Login</button>
+                <button id="MudarCor" class="BtnCor"> Mudar cor </button>
+
+            
+            </ul>   
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="secao1">
+            <h2>Solução do Problema</h2>
+            <p>Fonte de energia sustentável e portátil, com o avanço tecnológico do mundo, surge a necessidade de cada vez mais procurar fontes de energias que possam suportar tal avanço e que não prejudique o meio ambiente</p>
+            <img id="imgsecao1" src="./src/img/piezoeletricidadesolucao.gif" alt="">
+        </section>
+        <section id="secao2">
+            <h2>Tecnologia utilizada</h2>
+            <p>A tecnologia utilizada chama piezoeletricidade, materiais piezoeletricos são capazes de gerar tensão elétrica quando é aplicada tensão mecânica, como por exemplo, o impacto causado por pedestres nas ruas</p>
+            <img id="imgsecao1" src="./src/img/gerandoeletricidade.webp" alt="gerando eletricidade por pedestres" >
+        </section>
+        <section id="secao3">
+            <h2>Objetivos</h2>
+            <p> Tentar diminuir o uso de fontes de energia não-renováveis e limpas, e priorizando justamnente as renováveis, tendo um objetivo de impactar menos o meio ambiente</p>
+            <img id="imgsecao1" src="./src/img/objetivos.webp" alt="Objetivo de viver um mundo melhor">
+        </section>
+        <section id="secao4">
+            <h2>Público</h2>
+            <p> O público que iria usufruir da piezoeletricidade, seria principalmente empresas/lugares que possuem grande circulação de pessoas, para maximizar os ganhos</p>
+            <img id="imgsecao1" src="./src/img/publico.webp" alt="publico">
+        </section>
+        <section id="secao5">
+            <h2>Benefícios</h2>
+            <p>O benefício de empresas utilizarem a piezo eletricidade, é pensar na economia que será realizada e na saúde do meio ambiente </p>
+            <img id="imgsecao1" src="./src/img/economia.jpg" alt="economia">
+        </section>
+        <section id="secao6">
+            <h2>Uso Diário</h2>
+            <p>Lugares como a estação da Luz, que recebem milhares de pessoas, teria um uso diário que pagaria o investimento, pois tanto o impacto/vibrações do trens, quanto das pessoas, seria possível de realizar uma geração de energia</p>
+
+        </section>
+
+        <div class="slideshow-container">
+           
+            <div class="slide fade">
+                <img src="./src/img/placaspiezo.webp" alt="Solução 1" class="slide-image imgsecao1">
+                <div class="text">Energia sustentável</div>
+            </div>
+        
+      
+            <div class="slide fade">
+                <img src="./src/img/gerandoenergia.webp" alt="Solução 2" class="slide-image imgsecao1">
+                <div class="text">Impacto ambiental reduzido</div>
+            </div>
+          
+            
+          ->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+        
+       
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        
+        
+
+        
+
+    </main>
+
+    
+   
+
+    <script src="./src/js/scriptindex.js"></script>
+</body>
+</html>
